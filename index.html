@@ -121,6 +121,60 @@
     font-size:13px;
     color:#8CA091;
   }
+  .hero-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:32px;
+    flex-wrap:wrap-reverse;
+  }
+  .hero-text{flex:1 1 380px;}
+  .headshot{
+    flex:0 0 auto;
+    width:132px;
+    height:132px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid var(--signal);
+    box-shadow:0 0 0 6px rgba(184,98,44,0.12);
+    background:#1E2B24;
+  }
+  .headshot img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  @media (max-width:560px){
+    .headshot{width:96px; height:96px;}
+  }
+  .hero-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:32px;
+    flex-wrap:wrap-reverse;
+  }
+  .hero-text{flex:1 1 380px;}
+  .headshot{
+    flex:0 0 auto;
+    width:132px;
+    height:132px;
+    border-radius:50%;
+    overflow:hidden;
+    border:2px solid var(--signal);
+    box-shadow:0 0 0 6px rgba(184,98,44,0.12);
+    background:#1E2B24;
+  }
+  .headshot img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  @media (max-width:560px){
+    .headshot{width:96px; height:96px;}
+  }
 
   /* ---------- Vital line signature ---------- */
   .vital{
@@ -300,9 +354,16 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow"><span class="dot"></span> Open to new opportunities</div>
-    <h1 class="name">Ash McArthur</h1>
-    <p class="role">Customer Success &amp; Program Operations leader — a decade-plus building trust with clinicians, IT leaders, and hospital executives across enterprise healthcare technology.</p>
+    <div class="hero-top">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="dot"></span> Open to new opportunities</div>
+        <h1 class="name">Ash McArthur</h1>
+        <p class="role">Customer Success &amp; Program Operations leader — a decade-plus building trust with clinicians, IT leaders, and hospital executives across enterprise healthcare technology.</p>
+      </div>
+      <div class="headshot">
+        <img src="headshot.jpg" alt="Ash McArthur">
+      </div>
+    </div>
     <div class="hero-actions">
       <a class="btn btn-primary" href="mailto:ash.mcarthur51@gmail.com">Email Me</a>
       <a class="btn btn-secondary" href="https://www.linkedin.com/in/ashley-mcarthur51/" target="_blank" rel="noopener">LinkedIn</a>
