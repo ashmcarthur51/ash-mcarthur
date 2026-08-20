@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ash McArthur — Customer Success &amp; Program Operations</title>
+<meta name="description" content="Ash McArthur — Customer Success and Program Operations leader, healthcare technology, Norfolk, MA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Spectral:ital@1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #14201B;
+    --paper: #EDEFE9;
+    --paper-2: #E3E6DE;
+    --forest: #2E4B3A;
+    --slate: #35506B;
+    --signal: #B8622C;
+    --line: #C7CCC0;
+    --paper-ink: #1B241F;
+    --max: 880px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--paper-ink);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:17px;
+    line-height:1.6;
+  }
+  h1,h2,h3{
+    font-family:'Spectral', serif;
+    font-weight:600;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.02em;
+  }
+  a{color:inherit;}
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ---------- Hero ---------- */
+  header.hero{
+    background:var(--ink);
+    color:var(--paper);
+    padding:88px 0 0 0;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:#9FB0A3;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:22px;
+  }
+  .dot{
+    width:8px;height:8px;border-radius:50%;
+    background:#7FBF8F;
+    box-shadow:0 0 0 3px rgba(127,191,143,0.18);
+  }
+  h1.name{
+    font-size:clamp(42px, 7vw, 68px);
+    line-height:1.03;
+    color:var(--paper);
+  }
+  .role{
+    font-family:'Spectral', serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:clamp(19px, 2.6vw, 24px);
+    color:#C9D2C6;
+    margin-top:14px;
+    max-width:560px;
+  }
+  .hero-actions{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin:34px 0 0 0;
+  }
+  .btn{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13.5px;
+    letter-spacing:0.04em;
+    padding:12px 20px;
+    border-radius:2px;
+    text-decoration:none;
+    display:inline-block;
+    border:1px solid transparent;
+    transition:transform 0.15s ease, background 0.15s ease;
+  }
+  .btn:focus-visible{outline:2px solid var(--signal); outline-offset:3px;}
+  .btn-primary{
+    background:var(--signal);
+    color:#fff;
+  }
+  .btn-primary:hover{transform:translateY(-1px);}
+  .btn-secondary{
+    border-color:#4B5A50;
+    color:var(--paper);
+  }
+  .btn-secondary:hover{background:rgba(255,255,255,0.06);}
+  .location-line{
+    margin-top:26px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:#8CA091;
+  }
+
+  /* ---------- Vital line signature ---------- */
+  .vital{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+  .vital-top{margin-top:56px;}
+  .vital path{
+    fill:none;
+    stroke:var(--signal);
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+  .vital-top path{stroke:#5A7A63;}
+
+  section{
+    padding:64px 0;
+  }
+  section.tight{padding:44px 0;}
+  .section-label{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--forest);
+    margin-bottom:18px;
+  }
+  h2.section-title{
+    font-size:clamp(26px, 3.4vw, 32px);
+    color:var(--ink);
+    margin-bottom:22px;
+  }
+  p.lede{
+    font-size:18px;
+    max-width:640px;
+  }
+
+  /* ---------- Focus tags ---------- */
+  .tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:26px;
+  }
+  .tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    padding:8px 14px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:#fff;
+    color:var(--slate);
+  }
+
+  /* ---------- Experience timeline ---------- */
+  .timeline{
+    position:relative;
+    margin-top:36px;
+    border-left:2px solid var(--line);
+    padding-left:30px;
+  }
+  .rung{
+    position:relative;
+    padding-bottom:44px;
+  }
+  .rung:last-child{padding-bottom:0;}
+  .rung::before{
+    content:"";
+    position:absolute;
+    left:-36.5px;
+    top:6px;
+    width:11px;height:11px;
+    border-radius:50%;
+    background:var(--paper);
+    border:2px solid var(--signal);
+  }
+  .rung .when{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--forest);
+    margin-bottom:6px;
+    display:block;
+  }
+  .rung h3{
+    font-size:21px;
+    color:var(--ink);
+  }
+  .rung .org{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--slate);
+    margin-top:2px;
+    display:block;
+  }
+  .rung p{
+    margin-top:12px;
+    max-width:600px;
+  }
+  .rung ul{
+    margin:12px 0 0 0;
+    padding-left:20px;
+  }
+  .rung li{margin-bottom:6px;}
+
+  /* ---------- Beyond work ---------- */
+  .beyond{
+    background:var(--paper-2);
+    border-radius:4px;
+    padding:34px;
+    margin-top:8px;
+  }
+  .beyond h3{
+    font-size:20px;
+    color:var(--forest);
+  }
+  .beyond p{margin-top:10px; max-width:580px;}
+
+  /* ---------- Certifications ---------- */
+  .certs{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    margin-top:22px;
+  }
+  .cert{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13.5px;
+    color:var(--paper-ink);
+    border-left:2px solid var(--signal);
+    padding-left:14px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{
+    background:var(--ink);
+    color:var(--paper);
+    padding:56px 0 44px 0;
+    margin-top:20px;
+  }
+  footer h2{
+    color:var(--paper);
+    font-size:clamp(24px,3vw,30px);
+  }
+  footer p{color:#B7C2BA; margin-top:10px;}
+  .footer-links{
+    display:flex;
+    gap:22px;
+    margin-top:26px;
+    flex-wrap:wrap;
+  }
+  .footer-links a{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13.5px;
+    text-decoration:none;
+    border-bottom:1px solid #4B5A50;
+    padding-bottom:2px;
+  }
+  .footer-links a:hover{border-color:var(--signal); color:var(--signal);}
+  .fine{
+    margin-top:40px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    color:#6C7A70;
+  }
+
+  @media (max-width:560px){
+    header.hero{padding-top:64px;}
+    section{padding:48px 0;}
+    .timeline{padding-left:22px;}
+    .rung::before{left:-28.5px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Open to new opportunities</div>
+    <h1 class="name">Ash McArthur</h1>
+    <p class="role">Customer Success &amp; Program Operations leader — a decade-plus building trust with clinicians, IT leaders, and hospital executives across enterprise healthcare technology.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:YOUR-EMAIL@example.com">Email Me</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/ashley-mcarthur51/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="location-line">Norfolk, MA</div>
+  </div>
+  <svg class="vital vital-top" viewBox="0 0 880 60" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,30 L200,30 L220,30 L235,8 L250,52 L265,30 L290,30 L880,30" />
+  </svg>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="tight">
+      <div class="section-label">About</div>
+      <p class="lede">I build the systems and relationships that keep complex healthcare technology programs healthy — from account health scoring to the embedded teams that make adoption stick. Most of my career has lived at the intersection of clinical trust and enterprise account ownership, through hypergrowth and through two corporate acquisitions.</p>
+    </section>
+
+    <svg class="vital" viewBox="0 0 880 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 L340,20 L355,20 L368,4 L380,36 L392,20 L410,20 L880,20" />
+    </svg>
+
+    <section>
+      <div class="section-label">Focus Areas</div>
+      <h2 class="section-title">Where I add value</h2>
+      <div class="tags">
+        <span class="tag">Enterprise Account Ownership</span>
+        <span class="tag">Customer Health Scoring &amp; QBRs</span>
+        <span class="tag">Program P&amp;L Accountability</span>
+        <span class="tag">Embedded Team Leadership</span>
+        <span class="tag">C-Suite &amp; Clinical Stakeholder Trust</span>
+        <span class="tag">Gainsight</span>
+        <span class="tag">Healthcare SaaS</span>
+        <span class="tag">Retention Through Acquisition</span>
+      </div>
+    </section>
+
+    <svg class="vital" viewBox="0 0 880 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 L340,20 L355,20 L368,4 L380,36 L392,20 L410,20 L880,20" />
+    </svg>
+
+    <section>
+      <div class="section-label">Experience</div>
+      <h2 class="section-title">A decade in healthcare technology</h2>
+      <div class="timeline">
+
+        <div class="rung">
+          <span class="when">2013 – Present</span>
+          <h3>Founder &amp; Leader, CSAE Program</h3>
+          <span class="org">Voalte → Hillrom → Baxter International</span>
+          <p>Joined Voalte as an early employee during hypergrowth and built the Connected Solution Application Engineer (CSAE) Program from the ground up — the same program, and the same mission, carried through two acquisitions.</p>
+          <ul>
+            <li>Owned outcomes for a portfolio of enterprise health system accounts, including Stanford Health, Cedars-Sinai, and Massachusetts General Hospital, alongside many other top-tier hospitals and IDNs.</li>
+            <li>Built and led a nationally dispersed team of roughly 15 embedded specialists, with direct P&amp;L accountability.</li>
+            <li>Reworked the program from an intentional loss-leader into a profitable operation — growing it to $2M in ARR while retaining every account the change touched.</li>
+            <li>Designed customer health scoring, QBR frameworks, and outcome-based account planning from scratch in Gainsight.</li>
+            <li>Managed relationships with C-suite stakeholders — CNOs, CIOs, and CMIOs — through multiple ownership transitions without losing momentum.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <svg class="vital" viewBox="0 0 880 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 L340,20 L355,20 L368,4 L380,36 L392,20 L410,20 L880,20" />
+    </svg>
+
+    <section class="tight">
+      <div class="section-label">Certifications</div>
+      <div class="certs">
+        <div class="cert">Google AI Essentials</div>
+        <div class="cert">AWS Cloud Technical Essentials</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-label">Beyond the Résumé</div>
+      <div class="beyond">
+        <h3>Forest &amp; Parks Laborer II, Massachusetts DCR</h3>
+        <p>Outside of my professional work, I volunteer seasonally with the Massachusetts DCR at Hopkinton State Park — hands-on trail and land stewardship work. It's a deliberate change of pace from account management, and a reminder that showing up reliably and maintaining something well is its own skill, in the woods or in a customer relationship. I grew up in Western North Carolina, where that connection to the outdoors started.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h2>Let's talk.</h2>
+    <p>Open to Customer Success, Program Operations, and adjacent leadership roles — ideally where healthcare, enterprise software, and steady relationships intersect.</p>
+    <div class="footer-links">
+      <a href="mailto:YOUR-EMAIL@example.com">Email</a>
+      <a href="https://www.linkedin.com/in/ashley-mcarthur51/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="fine">Norfolk, MA · Updated 2026</div>
+  </div>
+</footer>
+
+</body>
+</html>
